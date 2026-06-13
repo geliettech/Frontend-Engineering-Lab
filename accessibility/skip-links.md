@@ -90,31 +90,11 @@ Don't overdo this, though, a long list of skip links becomes its own navigation 
 
 Because the whole point is to skip something that repeats on *every* page, the skip link belongs in the root layout (or shared shell component), not duplicated in individual pages. In a Next.js app, that's `app/layout.tsx`; in another framework, it's whatever wraps your persistent navigation.
 
-### 5. Or: let a drop-in script handle it for you
+### Alternative Implementations
 
-If you'd rather not hand-roll the markup and CSS above, the [`@odunsih/ally`](https://github.com/Odunsih1/ally) accessibility widget can add a skip link for you automatically, it checks the page for an existing skip link and, if none is found, injects one pointing at the main content. Add the script once, near the end of your root layout:
+Some teams choose to use accessibility helper libraries that automatically inject skip links (and other enhancements) into a page, rather than adding the markup above by hand. This can be a useful shortcut when retrofitting an existing app, though it's still worth understanding the underlying pattern, focusable, hidden-until-focused link + focusable main target, since that's what these libraries are doing under the hood, and it helps you verify they're configured correctly.
 
-```tsx
-// app/layout.tsx (Next.js App Router)
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <body>
-        <Sidebar />
-        <main id="main-content" tabIndex={-1}>
-          {children}
-        </main>
-        <script
-          src="https://cdn.jsdelivr.net/gh/Odunsih1/ally@v1.2.0/accessibility-launcher.v1.2.0.min.js"
-          defer
-        />
-      </body>
-    </html>
-  );
-}
-```
-
-This is a reasonable shortcut when you're retrofitting accessibility into an existing app and don't want to touch every layout by hand. It's still worth understanding the manual approach above, the script's auto-injected skip link relies on the same idea: a focusable, initially-hidden link that's the first stop when tabbing, pointing at a focusable main content area. If your `<main>` doesn't have an `id` and isn't focusable, give it `id="main-content"` and `tabIndex={-1}` either way, so the generated link (or your own) has somewhere valid to land.
+Example: [@odunsih/ally](https://github.com/Odunsih1/ally)
 
 ## Tradeoffs
 
