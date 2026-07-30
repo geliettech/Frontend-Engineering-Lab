@@ -14,10 +14,7 @@ Next patterns, anti-patterns, and best practices from production codebases.
 - [Templates file in Next](./templates-file-in-next.md)
 - [Loading UI in Next](./loading-UI-in-next.md)
 - [Understanding Error handling in Next](./understanding-error-handling-in-next.md)
-
 <!-- Add a link to your article below, keeping the list alphabetical. -->
-
-*No articles yet — [be the first to contribute!](../CONTRIBUTING.md)*
 
 ## Ideas for Contributions (but not limited to)
 
