@@ -4,16 +4,16 @@ Next patterns, anti-patterns, and best practices from production codebases.
 
 ## Articles
 
-- [Introduction to nextjs](./Introduction-to-nextjs.md)
-- [Understanding Routing in Next.js](./Understanding-Routing-in-Next.js.md)
-- [not found page in next](./not-found-page-in-next.js.md)
+- [Introduction to nextjs](./introduction-to-nextjs.md)
+- [Routing Mechanism in Next.js](./routing-mechanism-in-nextjs.md)
+- [Custom Not Found (404) Pages in Next.js](./custom-not-found-pages-in-nextjs.md)
 - [File Colocation in Next](./file-colocation-in-next.md)
 - [Private Folder in Next](./private-folder.md)
 - [Understanding Layout in Next](./understanding-layout-in-nextjs.md)
-- [Understanding Metadata in Next](./understanding-metadata-in-next.md)
+- [Using Metadata in Next](./using-metadata-in-next.md)
 - [Templates file in Next](./templates-file-in-next.md)
 - [Loading UI in Next](./loading-UI-in-next.md)
-- [Understanding Error handling in Next](./understanding-error-handling-in-next.md)
+- [Error Handling in Next.js](./error-handling-in-nextjs.md)
 <!-- Add a link to your article below, keeping the list alphabetical. -->
 
 ## Ideas for Contributions (but not limited to)
