@@ -14,6 +14,7 @@ Next patterns, anti-patterns, and best practices from production codebases.
 - [Templates file in Next](./templates-file-in-next.md)
 - [Loading UI in Next](./loading-UI-in-next.md)
 - [Error Handling in Next.js](./error-handling-in-nextjs.md)
+- [Parallel Intercepting Routes](./parallel-intercepting-routes.md)
 <!-- Add a link to your article below, keeping the list alphabetical. -->
 
 ## Ideas for Contributions (but not limited to)
