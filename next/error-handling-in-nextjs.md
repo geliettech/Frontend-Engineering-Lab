@@ -251,7 +251,9 @@ Errors can be thrown manually.
 
 ```tsx
 export default async function Dashboard() {
-  throw new Error("Failed to load dashboard");
+   if(failedToLoadDashboard){
+   throw new Error("Failed to load dashboard")
+  }
 
   return <div>Dashboard</div>;
 }
