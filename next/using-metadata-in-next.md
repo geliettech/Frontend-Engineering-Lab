@@ -60,7 +60,7 @@ Metadata is **merged** from parent layouts down to child pages.
 
 ### Title Metadata
 
-This is simplest metadata you can define is the page title.
+This is the simplest metadata you can define is the page title.
 
 ```tsx
 import type { Metadata } from "next";
