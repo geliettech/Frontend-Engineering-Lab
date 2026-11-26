@@ -399,10 +399,10 @@ The important part here is:
 
 ```tsx
 {
-  children;
+  children
 }
 {
-  modal;
+  modal
 }
 ```
 
