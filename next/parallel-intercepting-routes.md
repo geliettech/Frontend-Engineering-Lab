@@ -660,7 +660,7 @@ This combination is particularly powerful for modal-based navigation.
 
 ## Tradeoffs
 
-- **When this shines:** Modal-based navigation,Photo and media galleries, Dashboards, Admin applications, Split-view applications, Master-detail interfaces, Complex applications with multiple independent UI areas, and Applications where URLs should remain shareable while navigation feels modal.
+- **When this shines:** Modal-based navigation, Photo and media galleries, Dashboards, Admin applications, Split-view applications, Master-detail interfaces, Complex applications with multiple independent UI areas, and Applications where URLs should remain shareable while navigation feels modal.
 - **When to avoid it:** Avoid using these patterns simply because they are available, For a simple application with straightforward page-to-page navigation, normal App Router navigation is usually easier to understand and maintain. For example, you probably don't need Parallel Routes for:
 
 ```text
