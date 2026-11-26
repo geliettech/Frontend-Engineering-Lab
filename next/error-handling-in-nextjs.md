@@ -276,7 +276,7 @@ Consider the following:
 
 - **When to avoid it:** Very small applications where a single error boundary is sufficient. Components that can safely handle errors with local conditional rendering instead of throwing exceptions.
 
-- **What you give up:** Additional files (`error.tsx`, `global-error.tsx`) to maintain.Errors in event handlers (such as button clicks) are **not** caught by route error boundaries and should be handled using `try...catch`. Developers still need proper logging and monitoring to diagnose production issues.
+- **What you give up:** Errors in event handlers (such as button clicks) are **not** caught by route error boundaries and should be handled using `try...catch`. Developers still need proper logging and monitoring to diagnose production issues.
 
 ## Key Takeaways
 
