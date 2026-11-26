@@ -179,11 +179,11 @@ export default async function ProductPage({ params }: Props) {
 }
 ```
 
-### catach-all segements
+### catch-all segements
 
 Sometimes you don't know how many URL segments you'll receive.
 
-Use `[...]`.
+Use `[...slug]`.
 
 ```
 app/
